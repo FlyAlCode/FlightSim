@@ -127,13 +127,15 @@ bool Camera::GetCurrentImage(cv::Mat &result_img, cv::Mat &result_road_img){
     // 2 如果超出当前活跃区域的边界，重新生成活跃区域
     if(out_of_bound){
         cv::Point2d center_pt = (geo_left_down + geo_left_up + geo_right_down + geo_right_up) / 4.0;
-        cv::Rect_<double> active_area = ground_->CalculateActiveArea(center_pt, 5000,5000);
+        cv::Rect_<double> active_area = ground_->CalculateActiveArea(center_pt, 10000,5000);
         cv::Rect2d road_active_area(active_area.x, active_area.y-213, active_area.width, active_area.height);
         // test whether the whole coordinate are aligned
         // cv::Rect_<double> active_area = cv::Rect2d(301500, 4.665e+06, 66000, 12000);
         ground_->UpdateActiveSatImage(active_area);
         ground_->UpdateActiveRoadImage(road_active_area);
-        // ground_->ShowActiveArea(0);
+
+        // debug
+        // ground_->ShowActiveArea(1);
     }
     // 3 获取图像
     if(ground_->GetActiveSatImage().empty())

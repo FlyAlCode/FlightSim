@@ -100,18 +100,29 @@ void Ground::ShowActiveArea(double scale, int t){
     else{
         cv::Mat road_show, sat_show;
         cv::resize(active_road_img_, road_show, cv::Size(0,0), scale, scale);
-        cv::resize(active_sat_img_, sat_show, cv::Size(0,0), scale, scale);
+        cv::resize(active_sat_img_/* /2 */, sat_show, cv::Size(0,0), scale, scale);
         cv::Mat add_img;
         sat_show.copyTo(add_img);
+        cv::Vec3b color_current;
         for(int i=0; i<road_show.rows; i++){
             for(int j=0; j<road_show.cols; j++){
-                if(road_show.at<uchar>(i,j) >30)
-                    add_img.at<cv::Vec3b> (i,j) = cv::Vec3b(0,0,255);
+                if(road_show.at<uchar>(i,j) >30){
+                    // color_current = add_img.at<cv::Vec3b> (i,j);
+                    // color_current[0] *= 0.4;
+                    // color_current[1] *= 0.4;
+                    // color_current[2] *= 0.8;
+                    // add_img.at<cv::Vec3b> (i,j) = color_current;
+                    add_img.at<cv::Vec3b> (i,j) = cv::Vec3b(0,255,255);
+                }
+                    
             }
         }
         cv::imshow("active road on active sat", add_img);
         // cv::imshow("active road", road_show);
         // cv::imshow("active sat", sat_show);
+        cv::imwrite("road_on_sat.png", add_img);
+        cv::imwrite("road.png", road_show);
+        cv::imwrite("sat.png", sat_show);
         cv::waitKey(t);
     }
 }

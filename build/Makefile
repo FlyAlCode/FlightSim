@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named flight_sim_single
-
-# Build rule for target.
-flight_sim_single: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 flight_sim_single
-.PHONY : flight_sim_single
-
-# fast build rule for target.
-flight_sim_single/fast:
-	$(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/build
-.PHONY : flight_sim_single/fast
-
-#=============================================================================
 # Target rules for targets named test_sid
 
 # Build rule for target.
@@ -183,7 +170,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... flight_sim_single"
 	@echo "... test_sid"
 	@echo "... test_ground"
 	@echo "... test_shp"

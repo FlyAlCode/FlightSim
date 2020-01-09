@@ -37,6 +37,8 @@ public:
     // void ShowRoadOnGround(const Ground &ground, const cv::Mat &road_img, cv::Mat &draw_img);
 
     inline const cv::Mat &get_H_c_2_g() const {return H_inv_;} 
+    inline const cv::Mat &get_R() const {return R_;} 
+    inline const cv::Mat &get_t() const {return t_;} 
 
 private:
     void InitIMU(const IMUParam &params);
@@ -62,7 +64,7 @@ private:
     // imu
     cIMUOdo imuOdo_;
     const double STD_GRAVITY = 0;
-    const double dt_ = 0.03333;
+    const double dt_ = 0.3333;
     double acc_[3];
     double gro_[3];
     double time_;

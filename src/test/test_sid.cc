@@ -4,24 +4,40 @@
 
 int main(){
     flight_sim::MrSid li_sid;
-    if(!li_sid.Init("/home/li/DataSet/2013Mosaic/coq2013_10.sid")){
+    if(!li_sid.Init("9.sid")){
         std::cout<<"Can't open file"<<std::endl;
         return -1;
     }
     li_sid.Print();
 
     cv::Mat result_img;
-    int x = 301500; 
-    int y = 4.665e+06;
-    int width = 2000/* 66000 */;
-    int height = 2000/* 12000 */;
+    int x = 321000; 
+    int y = 4.6815e+06;
+    int width = 363000 - x;
+    int height = y - 4.665e+06;
     int count = 0;
-    double t = cv::getTickCount();
-    li_sid.GetROISatImage(x,y,width, height, 0.5, result_img);
-    cv::imshow("test sid", result_img);
-    cv::waitKey(0);
 
+    // 将一个大的区域分散为多个小区域
+    cv::namedWindow("src", CV_WINDOW_NORMAL);
+    for(int i=0; i<width; i+=10000){
+        for(int j=0; j<height; j+=5000){
+            if(li_sid.GetROISatImage(x + i /* - 2 */, y - j, 10000, 6000, 1.2, result_img)){
+                // char tmp[40];
+                // sprintf(tmp, "ref_img_%d_%d.jpg", i, j);
+                // std::cout<<"Save image: "<< std::string(tmp)<<std::endl;
+                // cv::imwrite(tmp, result_img);
+                
+                cv::imshow("src", result_img);
+                cv::waitKey(0);
+            }
+        }
+    }
+    
+    // std::cout<<"image_width = "<<result_img.cols<<std::endl;
 
+    
+
+    // double t = cv::getTickCount();
     // while(li_sid.GetROISatImage(x,y,2000,2000, 1.0, result_img)){
     //     // std::cout<<"Fail to get roi image"<<std::endl;
     //     // return -1;

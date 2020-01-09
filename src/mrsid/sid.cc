@@ -232,7 +232,7 @@ bool MrSid::GetROISatImage(const double x, const double y,
 
    cv::Mat tmp(height_last, width_last, mat_data_type, mat_data);
    tmp.copyTo(result_img);  
-   
+
    // clean up
    for(lt_uint16 i = 0; i < numBands; i++)
       delete [] bsqData[i];

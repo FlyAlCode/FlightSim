@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/flight_sim_single.dir/rule:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/flight_sim_single.dir/rule
-.PHONY : src/CMakeFiles/flight_sim_single.dir/rule
-
-# Convenience name for target.
-flight_sim_single: src/CMakeFiles/flight_sim_single.dir/rule
-
-.PHONY : flight_sim_single
-
-# fast build rule for target.
-flight_sim_single/fast:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/build
-.PHONY : flight_sim_single/fast
-
-# Convenience name for target.
 src/CMakeFiles/test_sid.dir/rule:
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/test_sid.dir/rule
 .PHONY : src/CMakeFiles/test_sid.dir/rule
@@ -191,7 +176,6 @@ camera.o: camera.cc.o
 
 # target to build an object file
 camera.cc.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/camera.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/camera.cc.o
 .PHONY : camera.cc.o
 
@@ -201,7 +185,6 @@ camera.i: camera.cc.i
 
 # target to preprocess a source file
 camera.cc.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/camera.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/camera.cc.i
 .PHONY : camera.cc.i
 
@@ -211,7 +194,6 @@ camera.s: camera.cc.s
 
 # target to generate assembly for a file
 camera.cc.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/camera.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/camera.cc.s
 .PHONY : camera.cc.s
 
@@ -221,7 +203,6 @@ ground.o: ground.cc.o
 
 # target to build an object file
 ground.cc.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/ground.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/ground.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/ground.cc.o
 .PHONY : ground.cc.o
@@ -232,7 +213,6 @@ ground.i: ground.cc.i
 
 # target to preprocess a source file
 ground.cc.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/ground.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/ground.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/ground.cc.i
 .PHONY : ground.cc.i
@@ -243,7 +223,6 @@ ground.s: ground.cc.s
 
 # target to generate assembly for a file
 ground.cc.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/ground.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/ground.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/ground.cc.s
 .PHONY : ground.cc.s
@@ -254,7 +233,6 @@ imu/cIMUCorrect.o: imu/cIMUCorrect.cpp.o
 
 # target to build an object file
 imu/cIMUCorrect.cpp.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUCorrect.cpp.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUCorrect.cpp.o
 .PHONY : imu/cIMUCorrect.cpp.o
 
@@ -264,7 +242,6 @@ imu/cIMUCorrect.i: imu/cIMUCorrect.cpp.i
 
 # target to preprocess a source file
 imu/cIMUCorrect.cpp.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUCorrect.cpp.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUCorrect.cpp.i
 .PHONY : imu/cIMUCorrect.cpp.i
 
@@ -274,7 +251,6 @@ imu/cIMUCorrect.s: imu/cIMUCorrect.cpp.s
 
 # target to generate assembly for a file
 imu/cIMUCorrect.cpp.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUCorrect.cpp.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUCorrect.cpp.s
 .PHONY : imu/cIMUCorrect.cpp.s
 
@@ -284,7 +260,6 @@ imu/cIMUOdo.o: imu/cIMUOdo.cpp.o
 
 # target to build an object file
 imu/cIMUOdo.cpp.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUOdo.cpp.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUOdo.cpp.o
 .PHONY : imu/cIMUOdo.cpp.o
 
@@ -294,7 +269,6 @@ imu/cIMUOdo.i: imu/cIMUOdo.cpp.i
 
 # target to preprocess a source file
 imu/cIMUOdo.cpp.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUOdo.cpp.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUOdo.cpp.i
 .PHONY : imu/cIMUOdo.cpp.i
 
@@ -304,7 +278,6 @@ imu/cIMUOdo.s: imu/cIMUOdo.cpp.s
 
 # target to generate assembly for a file
 imu/cIMUOdo.cpp.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUOdo.cpp.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUOdo.cpp.s
 .PHONY : imu/cIMUOdo.cpp.s
 
@@ -314,7 +287,6 @@ imu/cIMUState.o: imu/cIMUState.cpp.o
 
 # target to build an object file
 imu/cIMUState.cpp.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUState.cpp.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUState.cpp.o
 .PHONY : imu/cIMUState.cpp.o
 
@@ -324,7 +296,6 @@ imu/cIMUState.i: imu/cIMUState.cpp.i
 
 # target to preprocess a source file
 imu/cIMUState.cpp.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUState.cpp.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUState.cpp.i
 .PHONY : imu/cIMUState.cpp.i
 
@@ -334,7 +305,6 @@ imu/cIMUState.s: imu/cIMUState.cpp.s
 
 # target to generate assembly for a file
 imu/cIMUState.cpp.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/imu/cIMUState.cpp.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/imu/cIMUState.cpp.s
 .PHONY : imu/cIMUState.cpp.s
 
@@ -365,40 +335,12 @@ main.cc.s:
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/main.cc.s
 .PHONY : main.cc.s
 
-make_single_image.o: make_single_image.cc.o
-
-.PHONY : make_single_image.o
-
-# target to build an object file
-make_single_image.cc.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/make_single_image.cc.o
-.PHONY : make_single_image.cc.o
-
-make_single_image.i: make_single_image.cc.i
-
-.PHONY : make_single_image.i
-
-# target to preprocess a source file
-make_single_image.cc.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/make_single_image.cc.i
-.PHONY : make_single_image.cc.i
-
-make_single_image.s: make_single_image.cc.s
-
-.PHONY : make_single_image.s
-
-# target to generate assembly for a file
-make_single_image.cc.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/make_single_image.cc.s
-.PHONY : make_single_image.cc.s
-
 mrsid/sid.o: mrsid/sid.cc.o
 
 .PHONY : mrsid/sid.o
 
 # target to build an object file
 mrsid/sid.cc.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/mrsid/sid.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_sid.dir/build.make src/CMakeFiles/test_sid.dir/mrsid/sid.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/mrsid/sid.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/mrsid/sid.cc.o
@@ -410,7 +352,6 @@ mrsid/sid.i: mrsid/sid.cc.i
 
 # target to preprocess a source file
 mrsid/sid.cc.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/mrsid/sid.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_sid.dir/build.make src/CMakeFiles/test_sid.dir/mrsid/sid.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/mrsid/sid.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/mrsid/sid.cc.i
@@ -422,7 +363,6 @@ mrsid/sid.s: mrsid/sid.cc.s
 
 # target to generate assembly for a file
 mrsid/sid.cc.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/mrsid/sid.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_sid.dir/build.make src/CMakeFiles/test_sid.dir/mrsid/sid.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/mrsid/sid.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/mrsid/sid.cc.s
@@ -434,7 +374,6 @@ shp/shp.o: shp/shp.cc.o
 
 # target to build an object file
 shp/shp.cc.o:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/shp/shp.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/shp/shp.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_shp.dir/build.make src/CMakeFiles/test_shp.dir/shp/shp.cc.o
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/shp/shp.cc.o
@@ -446,7 +385,6 @@ shp/shp.i: shp/shp.cc.i
 
 # target to preprocess a source file
 shp/shp.cc.i:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/shp/shp.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/shp/shp.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_shp.dir/build.make src/CMakeFiles/test_shp.dir/shp/shp.cc.i
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/shp/shp.cc.i
@@ -458,7 +396,6 @@ shp/shp.s: shp/shp.cc.s
 
 # target to generate assembly for a file
 shp/shp.cc.s:
-	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim_single.dir/build.make src/CMakeFiles/flight_sim_single.dir/shp/shp.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_ground.dir/build.make src/CMakeFiles/test_ground.dir/shp/shp.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/test_shp.dir/build.make src/CMakeFiles/test_shp.dir/shp/shp.cc.s
 	cd /home/li/KDE/Li_Project/FlightSim/FlightSim/build && $(MAKE) -f src/CMakeFiles/flight_sim.dir/build.make src/CMakeFiles/flight_sim.dir/shp/shp.cc.s
@@ -553,7 +490,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... flight_sim_single"
 	@echo "... test_sid"
 	@echo "... test_ground"
 	@echo "... test_shp"
@@ -576,9 +512,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... make_single_image.o"
-	@echo "... make_single_image.i"
-	@echo "... make_single_image.s"
 	@echo "... mrsid/sid.o"
 	@echo "... mrsid/sid.i"
 	@echo "... mrsid/sid.s"

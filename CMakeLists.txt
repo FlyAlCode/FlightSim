@@ -21,18 +21,18 @@ find_package(Eigen3 REQUIRED COMPONENTS)
 include_directories(${EIGEN3_INCLUDE_DIR})
 
 # set refer to mrsid lib 
-SET(MRSID_LIB_DIR /li/lib/)
+SET(MRSID_LIB_DIR ${PROJECT_SOURCE_DIR}/third_lib/lib/mrsid/)
 SET(MRSID_LIBS ${MRSID_LIB_DIR}libltidsdk.so  ${MRSID_LIB_DIR}libltidsdk.so.9 
      ${MRSID_LIB_DIR}libtbb.so  ${MRSID_LIB_DIR}libtbb.so.2)
-SET(MRSID_INCLUDE_DIR /li/include/mrsid_raster/)
-SET(MRSID_BIN_DIR /li/bin)
+SET(MRSID_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/third_lib/include/mrsid/)
+
 
 SET(REQUIRED_LIBRARIES ${REQUIRED_LIBRARIES} ${MRSID_LIBS}) 
 include_directories(${MRSID_INCLUDE_DIR})
 # message("add mrsid include directory: ${MRSID_INCLUDE_DIR}")
 
 # shplib
-SET(REQUIRED_LIBRARIES ${REQUIRED_LIBRARIES} /usr/local/lib/libshp.so)
-include_directories(/usr/local/include/  )
+SET(REQUIRED_LIBRARIES ${REQUIRED_LIBRARIES} ${PROJECT_SOURCE_DIR}/third_lib/lib/shp/libshp.so)
+include_directories(${PROJECT_SOURCE_DIR}/third_lib/include/shp/  )
 
 ADD_SUBDIRECTORY(src)

@@ -10,7 +10,8 @@ set(SOURCE_FILES ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/shp/shp.cc)
 
 set(SOURCE_FILES ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/camera.cc)
 set(SOURCE_FILES ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/ground.cc)
-set(SOURCE_FILES ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/main.cc)
+
+# set(SOURCE_FILES ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/main.cc)
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -33,5 +34,5 @@ TARGET_LINK_LIBRARIES(test_ground ${REQUIRED_LIBRARIES})
 add_executable(test_shp ${PROJECT_SOURCE_DIR}/src/test/test_shp.cc ${PROJECT_SOURCE_DIR}/src/shp/shp.cc)
 TARGET_LINK_LIBRARIES(test_shp ${REQUIRED_LIBRARIES})
 
-add_executable(flight_sim ${SOURCE_FILES} )
+add_executable(flight_sim ${SOURCE_FILES} ${PROJECT_SOURCE_DIR}/src/main.cc )
 TARGET_LINK_LIBRARIES(flight_sim ${REQUIRED_LIBRARIES})
