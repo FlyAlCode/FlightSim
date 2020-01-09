@@ -18,9 +18,13 @@ Install the Eigen3 with the instruction in http://eigen.tuxfamily.org/index.php?
 # Build
 Build the project with the following commands:
 $ cd ${root_path_of_the_project}
+
 $ mkdir build
+
 $ cd build
+
 $ cmake ../
+
 $ make
 
 # Run
@@ -34,4 +38,5 @@ Set the parameters in the python script in 'tools/make_image_sequences.py' accor
 
 ## 3. Run
 Run the python script to generate the aerial image sequences using command:
+
 $ python make_image_sequences.py
